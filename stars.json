@@ -1,0 +1,131 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stars",
+  "type": "registry:base",
+  "title": "STARS",
+  "description": "STARS design system preset: Rhea style on a Mist base, Phosphor icons, Rubik type, Midnight Blue / Hopeful Blue / Misty White palette with Critical Care Red reserved for destructive actions and rare accents.",
+  "author": "STARS",
+  "config": {
+    "style": "base-rhea",
+    "iconLibrary": "phosphor",
+    "rsc": false,
+    "tsx": true,
+    "rtl": false,
+    "menuColor": "default",
+    "menuAccent": "subtle",
+    "tailwind": {
+      "baseColor": "mist"
+    }
+  },
+  "dependencies": [
+    "tw-animate-css",
+    "@phosphor-icons/react",
+    "@fontsource-variable/rubik"
+  ],
+  "registryDependencies": [
+    "utils",
+    "https://raw.githubusercontent.com/STARSAirAmbulance/stars-shadcn-preset/main/r/font-rubik.json",
+    "https://raw.githubusercontent.com/STARSAirAmbulance/stars-shadcn-preset/main/r/font-heading-rubik.json"
+  ],
+  "cssVars": {
+    "theme": {
+      "color-stars-midnight": "var(--stars-midnight)",
+      "color-stars-hopeful": "var(--stars-hopeful)",
+      "color-stars-red": "var(--stars-red)",
+      "color-stars-grey": "var(--stars-grey)",
+      "color-stars-mist": "var(--stars-mist)"
+    },
+    "light": {
+      "radius": "0.625rem",
+      "background": "oklch(0.968 0.003 49)",
+      "foreground": "oklch(0.286 0.049 234)",
+      "card": "oklch(0.995 0.001 49)",
+      "card-foreground": "oklch(0.286 0.049 234)",
+      "popover": "oklch(0.995 0.001 49)",
+      "popover-foreground": "oklch(0.286 0.049 234)",
+      "primary": "oklch(0.286 0.049 234)",
+      "primary-foreground": "oklch(0.968 0.003 49)",
+      "secondary": "oklch(0.930 0.008 60)",
+      "secondary-foreground": "oklch(0.286 0.049 234)",
+      "muted": "oklch(0.940 0.006 55)",
+      "muted-foreground": "oklch(0.50 0.035 234)",
+      "accent": "oklch(0.945 0.030 181)",
+      "accent-foreground": "oklch(0.286 0.049 234)",
+      "destructive": "oklch(0.605 0.246 29)",
+      "border": "oklch(0.900 0.012 70)",
+      "input": "oklch(0.900 0.012 70)",
+      "ring": "oklch(0.72 0.09 185)",
+      "chart-1": "oklch(0.286 0.049 234)",
+      "chart-2": "oklch(0.846 0.079 181)",
+      "chart-3": "oklch(0.55 0.085 210)",
+      "chart-4": "oklch(0.68 0.06 240)",
+      "chart-5": "oklch(0.80 0.03 70)",
+      "sidebar": "oklch(0.955 0.005 55)",
+      "sidebar-foreground": "oklch(0.286 0.049 234)",
+      "sidebar-primary": "oklch(0.286 0.049 234)",
+      "sidebar-primary-foreground": "oklch(0.968 0.003 49)",
+      "sidebar-accent": "oklch(0.930 0.035 181)",
+      "sidebar-accent-foreground": "oklch(0.286 0.049 234)",
+      "sidebar-border": "oklch(0.900 0.012 70)",
+      "sidebar-ring": "oklch(0.72 0.09 185)",
+      "stars-midnight": "oklch(0.286 0.049 234)",
+      "stars-hopeful": "oklch(0.846 0.079 181)",
+      "stars-red": "oklch(0.605 0.246 29)",
+      "stars-grey": "oklch(0.889 0.013 71)",
+      "stars-mist": "oklch(0.968 0.003 49)"
+    },
+    "dark": {
+      "background": "oklch(0.22 0.040 234)",
+      "foreground": "oklch(0.968 0.003 49)",
+      "card": "oklch(0.286 0.049 234)",
+      "card-foreground": "oklch(0.968 0.003 49)",
+      "popover": "oklch(0.286 0.049 234)",
+      "popover-foreground": "oklch(0.968 0.003 49)",
+      "primary": "oklch(0.846 0.079 181)",
+      "primary-foreground": "oklch(0.22 0.040 234)",
+      "secondary": "oklch(0.34 0.045 234)",
+      "secondary-foreground": "oklch(0.968 0.003 49)",
+      "muted": "oklch(0.34 0.045 234)",
+      "muted-foreground": "oklch(0.75 0.02 220)",
+      "accent": "oklch(0.36 0.05 220)",
+      "accent-foreground": "oklch(0.968 0.003 49)",
+      "destructive": "oklch(0.66 0.21 27)",
+      "border": "oklch(1 0 0 / 10%)",
+      "input": "oklch(1 0 0 / 15%)",
+      "ring": "oklch(0.75 0.08 181)",
+      "chart-1": "oklch(0.846 0.079 181)",
+      "chart-2": "oklch(0.72 0.09 200)",
+      "chart-3": "oklch(0.90 0.01 60)",
+      "chart-4": "oklch(0.62 0.07 240)",
+      "chart-5": "oklch(0.80 0.025 71)",
+      "sidebar": "oklch(0.245 0.042 234)",
+      "sidebar-foreground": "oklch(0.968 0.003 49)",
+      "sidebar-primary": "oklch(0.846 0.079 181)",
+      "sidebar-primary-foreground": "oklch(0.22 0.040 234)",
+      "sidebar-accent": "oklch(0.34 0.045 234)",
+      "sidebar-accent-foreground": "oklch(0.968 0.003 49)",
+      "sidebar-border": "oklch(1 0 0 / 10%)",
+      "sidebar-ring": "oklch(0.75 0.08 181)",
+      "stars-midnight": "oklch(0.286 0.049 234)",
+      "stars-hopeful": "oklch(0.846 0.079 181)",
+      "stars-red": "oklch(0.605 0.246 29)",
+      "stars-grey": "oklch(0.889 0.013 71)",
+      "stars-mist": "oklch(0.968 0.003 49)"
+    }
+  },
+  "css": {
+    "@utility stars-rule": {
+      "height": "2px",
+      "width": "100%",
+      "border": "0",
+      "background-color": "var(--stars-red)"
+    },
+    "@utility stars-rule-thin": {
+      "height": "1px",
+      "width": "100%",
+      "border": "0",
+      "background-color": "var(--stars-red)"
+    }
+  },
+  "docs": "STARS preset installed. Brand utilities: bg-stars-midnight, text-stars-hopeful, bg-stars-red, etc. Use <hr class=\"stars-rule\" /> for a Critical Care Red accent line. Keep red for destructive actions and rare accents only."
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-heading-rubik",
+  "type": "registry:font",
+  "title": "Rubik (headings)",
+  "description": "Rubik variable font applied to h1\u2013h6 via --font-heading.",
+  "font": {
+    "family": "'Rubik Variable', ui-sans-serif, system-ui, sans-serif",
+    "provider": "google",
+    "import": "Rubik",
+    "variable": "--font-heading",
+    "subsets": [
+      "latin"
+    ],
+    "selector": "h1, h2, h3, h4, h5, h6",
+    "dependency": "@fontsource-variable/rubik"
+  }
+}

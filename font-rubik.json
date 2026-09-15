@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-rubik",
+  "type": "registry:font",
+  "title": "Rubik",
+  "description": "Rubik variable font (Google Fonts) as the STARS body font.",
+  "font": {
+    "family": "'Rubik Variable', ui-sans-serif, system-ui, sans-serif",
+    "provider": "google",
+    "import": "Rubik",
+    "variable": "--font-sans",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource-variable/rubik"
+  }
+}
