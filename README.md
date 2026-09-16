@@ -1,9 +1,9 @@
 # STARS shadcn/ui preset
 
-A custom shadcn/ui preset that reproduces the `b5LDvbObY` builder settings
+A custom shadcn/ui preset for initial STARS applications. It is based on the `b5LDvbObY` builder settings
 (Rhea style, Mist base, Phosphor icons, default radius, default/solid menu,
-subtle menu accent) and swaps in the STARS palette, STARS chart colours and
-Rubik for both body and headings.
+subtle menu accent) and swaps in the STARS palette, STARS chart colours and brand font (Rubik) for both body and headings.
+This repository also contains the STARS logos and "S"-mark logos in multiple colours.
 
 ## Why this is a URL and not a short code
 
@@ -52,7 +52,7 @@ host (Cloudflare Pages, S3, the Preflight platform, etc.).
 
 If the host is private, the CLI supports authenticated registries via
 `components.json` → `registries` (headers / tokens). Public is simpler for a
-theme file that contains no secrets.
+public theme file that contains no secrets.
 
 ## Usage
 
@@ -114,7 +114,7 @@ Brand inputs (converted to OKLCH):
 Design logic:
 
 - **Light mode** is "paper and ink": Misty White is the page, Midnight Blue is
-  text and the primary action, Saving Grey lineage provides borders / inputs /
+  text and the primary action, colours derived from Saving Grey provide borders / inputs /
   secondary surfaces, and Hopeful Blue appears only as a tint for hover/selected
   (`accent`, `sidebar-accent`) and as the focus ring. Cards are near-white so
   they lift off the mist.
