@@ -31,10 +31,44 @@ registry.json                – optional index (for `shadcn build` / registry l
 r/stars.json                 – the preset (type: registry:base)
 r/font-rubik.json            – Rubik → --font-sans
 r/font-heading-rubik.json    – Rubik → --font-heading, applied to h1–h6
+r/stars-logos.json           – the logos: SVGs into public/brand plus a StarsLogo component (type: registry:block)
+components/stars-logo.tsx    – source of that component
+stars_logos/*.svg            – the artwork as exported (wordmark and S-mark, RGB)
+stars_logos/png/*.png        – square app icons rendered from the S-mark (32, 180, 192, 512)
 ```
 
-All four validate against `registryItemSchema` / `registrySchema` from
-`shadcn@4.21.0`.
+All items validate against `registryItemSchema` / `registrySchema` from
+`shadcn@4.21.0`. Rebuild `r/` after editing `registry.json`, `components/`, or the
+artwork: `pnpm dlx shadcn@latest build --output r` (then delete the `r/registry.json` it
+also writes).
+
+## Logos
+
+```bash
+pnpm dlx shadcn@latest add https://raw.githubusercontent.com/STARSAirAmbulance/stars-shadcn-preset/main/r/stars-logos.json
+```
+
+writes `public/brand/stars-wordmark-{red,black,white}.svg`,
+`public/brand/stars-mark-{red,black,white,midnight,hopeful,grey,mist}.svg`, and
+`app/components/brand/stars-logo.tsx`:
+
+```tsx
+<StarsLogo height={28} />                          // red wordmark
+<StarsLogo color="white" height={24} />            // on Midnight Blue
+<StarsLogo variant="mark" color="midnight" height={20} />
+```
+
+Use the wordmark wherever it fits, the mark alone only in tight spaces. Keep clear space of
+at least the height of the "S" around the wordmark. Do not recolour, stretch, or inline the
+SVGs (their class names collide when two are inlined). Re-run the command to refresh after
+the artwork changes.
+
+Square PNG icons for favicons and PWA manifests are in `stars_logos/png/`:
+`stars-mark-{midnight,red,black,white-on-midnight}-{32,180,192,512}.png` (white on a
+Midnight Blue background; the mark fills 70% of the width, inside the maskable safe zone).
+They are rendered with headless Chromium from the SVGs; `stars-dev:new-app` downloads the
+Midnight Blue set as the default favicon and app icon, and the white-on-midnight set as the
+maskable icon.
 
 ## Hosting
 
