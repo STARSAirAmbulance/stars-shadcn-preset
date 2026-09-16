@@ -5,9 +5,9 @@ A custom shadcn/ui preset for initial STARS applications. It is based on the `b5
 subtle menu accent) and swaps in the STARS palette, STARS chart colours and brand font (Rubik) for both body and headings.
 This repository also contains the STARS logos and "S"-mark logos in multiple colours.
 
-## Why this is a URL and not a short code
+## About Shadcn Presets: short codes and repository URLs
 
-Short preset codes such as `b5LDvbObY` are bit-packed indexes into fixed option
+Shadcn short preset codes such as `b5LDvbObY` are bit-packed indexes into fixed option
 lists (`shadcn preset decode b5LDvbObY` shows style=rhea, baseColor=mist,
 theme=sky, chartColor=sky, iconLibrary=phosphor, font=inter). The code format
 has 6 bits for "theme" and 6 bits for "font" – it can only name one of the
@@ -66,9 +66,6 @@ the artwork changes.
 Square PNG icons for favicons and PWA manifests are in `stars_logos/png/`:
 `stars-mark-{midnight,red,black,white-on-midnight}-{32,180,192,512}.png` (white on a
 Midnight Blue background; the mark fills 70% of the width, inside the maskable safe zone).
-They are rendered with headless Chromium from the SVGs; `stars-dev:new-app` downloads the
-Midnight Blue set as the default favicon and app icon, and the white-on-midnight set as the
-maskable icon.
 
 ## Hosting
 
@@ -167,7 +164,7 @@ Key contrast ratios (WCAG): foreground/background 12.96 (light) and 15.77
 
 ### Extra brand tokens
 
-The preset adds five raw brand colours as Tailwind colours so you can use them without overriding the the semantic color tokens:
+The preset adds five raw brand colours as Tailwind colours so you can use them without overriding the semantic color tokens:
 
 `bg-stars-midnight` `text-stars-hopeful` `border-stars-red` `bg-stars-grey`
 `bg-stars-mist` (and every other colour utility).
