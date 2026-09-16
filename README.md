@@ -133,8 +133,7 @@ Key contrast ratios (WCAG): foreground/background 12.96 (light) and 15.77
 
 ### Extra brand tokens
 
-The preset adds five raw brand colours as Tailwind colours so you can reach for
-them deliberately without polluting the semantic tokens:
+The preset adds five raw brand colours as Tailwind colours so you can use them without overriding the the semantic color tokens:
 
 `bg-stars-midnight` `text-stars-hopeful` `border-stars-red` `bg-stars-grey`
 `bg-stars-mist` (and every other colour utility).
