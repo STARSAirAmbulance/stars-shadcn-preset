@@ -165,6 +165,71 @@
         "selector": "h1, h2, h3, h4, h5, h6",
         "dependency": "@fontsource-variable/rubik"
       }
+    },
+    {
+      "name": "stars-logos",
+      "type": "registry:block",
+      "title": "STARS logos",
+      "description": "The STARS wordmark (Critical Care Red, black, white) and S-mark (plus Midnight Blue, Hopeful Blue, Saving Grey, Misty White) as SVG files under public/brand, with a StarsLogo component. Square PNG app icons live in stars_logos/png of this repository.",
+      "author": "STARS",
+      "files": [
+        {
+          "path": "stars_logos/STARS-Critical-Care-Red-RGB.svg",
+          "type": "registry:file",
+          "target": "~/public/brand/stars-wordmark-red.svg"
+        },
+        {
+          "path": "stars_logos/STARS-Black-RGB.svg",
+          "type": "registry:file",
+          "target": "~/public/brand/stars-wordmark-black.svg"
+        },
+        {
+          "path": "stars_logos/STARS-White-RGB.svg",
+          "type": "registry:file",
+          "target": "~/public/brand/stars-wordmark-white.svg"
+        },
+        {
+          "path": "stars_logos/STARS-S-Critical-Care-Red-RGB.svg",
+          "type": "registry:file",
+          "target": "~/public/brand/stars-mark-red.svg"
+        },
+        {
+          "path": "stars_logos/STARS-S-Black-RGB.svg",
+          "type": "registry:file",
+          "target": "~/public/brand/stars-mark-black.svg"
+        },
+        {
+          "path": "stars_logos/STARS-S-White-RGB.svg",
+          "type": "registry:file",
+          "target": "~/public/brand/stars-mark-white.svg"
+        },
+        {
+          "path": "stars_logos/STARS-S-Midnight-Blue-RGB.svg",
+          "type": "registry:file",
+          "target": "~/public/brand/stars-mark-midnight.svg"
+        },
+        {
+          "path": "stars_logos/STARS-S-Hopeful-Blue-RGB.svg",
+          "type": "registry:file",
+          "target": "~/public/brand/stars-mark-hopeful.svg"
+        },
+        {
+          "path": "stars_logos/STARS-S-Saving-Grey-RGB.svg",
+          "type": "registry:file",
+          "target": "~/public/brand/stars-mark-grey.svg"
+        },
+        {
+          "path": "stars_logos/STARS-S-Misty-White-RGB.svg",
+          "type": "registry:file",
+          "target": "~/public/brand/stars-mark-mist.svg"
+        },
+        {
+          "path": "components/stars-logo.tsx",
+          "type": "registry:component",
+          "target": "~/app/components/brand/stars-logo.tsx"
+        }
+      ],
+      "docs": "STARS logos installed under public/brand. Render them with <StarsLogo variant=\"wordmark\" color=\"red\" height={28} /> from app/components/brand/stars-logo.tsx; variant=\"mark\" for the S alone. Red, black, or white wordmark on calm backgrounds; white on Midnight Blue. Do not recolour, stretch, or inline the SVGs (their class names collide). Re-run this command to refresh after Marcomms updates the artwork."
     }
   ]
 }
